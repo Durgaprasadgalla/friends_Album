@@ -48,7 +48,7 @@
 }
 .container-img{
     width: 100%;
-    border-radius:50%;
+    border-radius: 50%;
 }
 /* Floating Hearts for Friendship Animation */
 .heart {
@@ -147,9 +147,7 @@
     justify-content: center;
     align-items: center;
     color: black;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    
+    /* width: 80%; */
 }
 .boys-heading{
     color:rgb(9, 233, 207);
@@ -185,7 +183,7 @@ span{
     border: 2px solid black;
     width: 100%;
     height: 100%;
-} 
+}
 .upload-container{
     padding: 10%;
     display: flex;
@@ -209,37 +207,13 @@ span{
 }
 
 
-@media(min-width:901px){
-    .card-conatiner{
-        width:100%;
-        /* margin: 20%; */
-        background-color: white;
-        display: flex;
-        flex-direction:column;
-        align-items: center;
-        justify-content: center;
-        border: 2px solid black;
-        box-shadow: 0 1px 20px black;
-        cursor: pointer;
-        font-family: 'Roboto', sans-serif;
-    }
-    .container-img{
-        width: 60%;
-        height:60%;
-    }
-}
-@media(min-width:601px)and (max-width:900px){
-    
-}
 h1 {
     color: rgb(9, 233, 207);
     
 }
 .upload-section {
     margin: 20px 0;
-    color: rgb(9, 233, 207);
-   
-    
+    color: rgb(9, 233, 207); 
 }
 .upload-section input[type="file"] {
     padding: 10px;
@@ -280,4 +254,49 @@ h1 {
     text-align: center;
     line-height: 25px;
 }
+.songbtn{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 12px;
+    background-color: rgb(13, 112, 241);
+    color:black;
+    font-weight: bold;
 
+}
+/*mobile */
+@media (max-width: 600px) {
+    .heading{
+        font-size: 25px;
+    }
+    .information{
+        font-size: 15px;
+    }
+ 
+
+}
+/*Tab */
+@media(min-width:601px)and (max-width:900px){
+    
+}
+/*Desktop */
+@media(min-width:901px){
+    .card-conatiner{
+        width:100%;
+        /* margin: 20%; */
+        background-color: white;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+        box-shadow: 0 1px 20px black;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+    }
+    .container-img{
+        width: 60%;
+        height:60%;
+    }
+}
