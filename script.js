@@ -66,3 +66,15 @@ const imageInput = document.getElementById('imageInput');
 
         // On page load, display the saved images
         window.onload = displaySavedImages;
+
+
+var isplaying = false;
+function playaudio(){
+    var audio = document.getElementById("songbtn");
+    if (isplaying){
+        audio.pause();
+    }else{
+        audio.play()
+    }
+    isplaying =! isplaying;
+}
