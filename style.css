@@ -269,7 +269,7 @@ h1 {
     border-radius: 12px;
     background-color: rgb(56, 137, 243);
     color:black;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     font-family:'Courier New', Courier, monospace;
@@ -278,6 +278,18 @@ h1 {
 }
 .songbtn:hover{
     background-color: blanchedalmond;
+}
+.memories{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+.card-conatiners1{
+    height:70%;
+    width: 80%;
 }
 /*mobile */
 @media (max-width: 600px) {
@@ -289,7 +301,20 @@ h1 {
         font-size: 12px;
         font-family:'Courier New', Courier, monospace;
     }
- 
+    .card-conatiners1{
+      
+        height:40%;
+        width: 80%;
+    }
+    .memories{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+   
+    }
+  
 
 }
 /*Tab */
@@ -306,6 +331,18 @@ h1 {
         width: 80%;
         height: 400px;
         border-radius: 50%;
+    }
+    .memories{
+        height:100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card-conatiners1{
+        margin: 10px;
+        height:40%;
+        width: 60%;
     }
 }
 /*Desktop */
@@ -327,4 +364,15 @@ h1 {
         width: 50%;
         height:50%;
     }
+    .memories{
+        height:100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-conatiners1{
+        height:70%;
+        width: 80%;
+        margin: 10px;
+}
 }
