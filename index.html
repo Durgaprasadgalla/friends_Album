@@ -60,7 +60,7 @@
         </h5>
       </div>
       <div class="heart"></div>
-      <img class="container-img" src="cover.jpg" />
+      <img class="container-img" loading="lazy" src="cover.jpg" />
       <div class="btns">
       <button  class="songbtn" onclick="playaudio()">Feel Music</button>
       <a  href="#boys"> <button  class="songbtn" > Friends </button> </a> 
@@ -74,7 +74,6 @@
     <audio id="songbtn" autoplay loop controls style="display: none">
       <source src="O My Friend.mp3" type="audio/mp3" />
     </audio>
-
     <!-- Boys -->
     <div class="boys" id="boys">
       <h1 class="boys-heading">Boys <span>(Rowdys)</span></h1>
@@ -406,7 +405,7 @@
           <div class="col-12 col-md-6 col-lg-6">
             <div class="uploaded">
               <h3 style="color: rgb(9, 233, 207); font-size:22px">Your Uploaded Memories</h3>
-              <div id="gallery"></div>
+              <div style="background-color: black;" id="gallery"></div>
             </div>
           </div>
         </div>
@@ -421,7 +420,7 @@
           <img class="card-img" src="Girls.jpg" />
         </div>
       </div>
-    </div>
+    </div> 
     <center>
       <footer style="font-family:'Courier New', Courier, monospace;font-weight:bold;">&copy;2024 Friends_Album (Dp&hearts;)</footer>
       <div class="heart"></div>
