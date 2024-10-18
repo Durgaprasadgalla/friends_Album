@@ -44,7 +44,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    row-gap:5%;
+    row-gap:10%;
 }
 .container-img{
     width: 100%;
@@ -294,6 +294,26 @@ h1 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+  .marquee::after {
+    content: attr(data-text);
+    animation: scroll-left 5s linear infinite;
+  }
+
+  @keyframes scroll-left {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
 }
 /*mobile */
 @media (max-width: 600px) {
